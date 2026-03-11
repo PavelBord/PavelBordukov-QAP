@@ -5,19 +5,19 @@ print(int(2.99))  # Вывод: 2
 
 # Заменить символ "#" на символ "/" в строке 'www.my_site.com#about'
 
-org_url = 'www.my_site.com#about'  # Заменяем '#' на '/'
-new_url = org_url.replace('#', '/')
+org_url = "www.my_site.com#about"  # Заменяем '#' на '/'
+new_url = org_url.replace("#", "/")
 print(new_url)  # Вывод: www.my_site.com/about
 
 # напишите программу,которая добавляет 'ing' к слову 'stroka'
 
-str_1 = 'Stroka'
-print(str_1 + 'ing')
+str_1 = "Stroka"
+print(str_1 + "ing")
 
 # В строке "Ivanou Ivan" поменяйте местами слова=> "Ivan Ivanou"
 # Напишите программу которая удаляет в пробел в начале,в конце строки
 
-name = 'Ivanou Ivan'
+name = "Ivanou Ivan"
 a, b = name.split()
 print(b, a)
 
@@ -26,28 +26,28 @@ print(b, a)
 # количество учащихся в десяти разных классах(например ,1а,1б,2б,6а и тд.
 
 school = {
-    '1а': 26,
-    '1б': 25,
-    '2б': 18,
-    '3в': 15,
-    '4а': 21,
-    '5г': 23,
-    '6б': 17,
-    '7д': 21,
-    '8г': 15,
-    '9б': 28
+    "1а": 26,
+    "1б": 25,
+    "2б": 18,
+    "3в": 15,
+    "4а": 21,
+    "5г": 23,
+    "6б": 17,
+    "7д": 21,
+    "8г": 15,
+    "9б": 28,
 }
 print(school)
 
 # Создать список и извлеките из него списка второй элемент
 
-my_list = ['Груша', 'Яблока', 'Вишня', 'Арбуз']
+my_list = ["Груша", "Яблока", "Вишня", "Арбуз"]
 element_2 = my_list[1]
 print(element_2)
 
 # Вывести входит ли строка1 в строку2(пример:employ и employment)
 
-print('employ' in 'employment')
+print("employ" in "employment")
 
 # Вывести нужные символы
 # x="My name is Agent Smith"
@@ -63,5 +63,5 @@ print(x[3:16:3])  # nesgt
 # [1,5,2,9,9,1]=>5.Напишите программу,которая будет выводить уникальное число
 
 nums = [1, 5, 2, 9, 9, 2, 1]
-result = sum(set(nums))*2 - sum(nums)
+result = sum(set(nums)) * 2 - sum(nums)
 print(result)
