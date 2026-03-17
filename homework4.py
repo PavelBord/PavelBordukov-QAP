@@ -110,3 +110,19 @@ print(my_profile)
 # 7.Создай модуль math_utils.py с тремя функциями: square(n) — возводит в квадрат, cube(n) — возводит в куб, is_even(n) — возвращает True/False. В main.py импортируй модуль, 
 # попроси пользователя ввести число через input, примени все три функции и выведи результаты. 
 # Защити вызовы конструкцией if __name__ == "__main__".
+
+import math_utils
+
+def main() -> None:
+    num: int = int(input("Введите целое число: "))
+
+    sq: int = math_utils.square(num)
+    cb: int = math_utils.cube(num)
+    even: bool = math_utils.is_even(num)
+
+    print(f"Квадрат: {sq}")
+    print(f"Куб: {cb}")
+    print(f"Четное: {even}")
+
+if __name__ == "__main__":
+    main()
